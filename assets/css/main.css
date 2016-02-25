@@ -111,14 +111,6 @@
 
 	}
 
-    #header .credit{
-        font-size: 0.5em;
-        width:30%;
-        bottom:0;
-        position:fixed;
-        /*margin:0px auto 0 auto;*/
-    }
-
 	@media screen and (max-width: 1280px) {
 
 		.container.\31 25\25 {
@@ -1607,7 +1599,7 @@
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2825,17 +2817,10 @@
 		/* Header */
 
 			#header {
-				padding: 6em 3em 3em 3em;
+				padding: 6em 3em 0 3em;
 				width: 30%;
 			}
 
-            #header .credit{
-                font-size: 0.5em;
-                width:30%;
-                bottom:0;
-                position:fixed;
-                /*margin:0px auto 0 auto;*/
-            }
 				#header h1 {
 					font-size: 1.25em;
 				}
@@ -2878,20 +2863,12 @@
 				background-position: top left, center center;
 				background-size: auto,		cover;
 				left: auto;
-				padding: 6em 4em;
+				padding: 6em 4em 0 4em;
 				position: relative;
 				text-align: center;
 				top: auto;
 				width: 100%;
 			}
-
-            #header .credit{
-                font-size: 0.5em;
-                width:100%;
-                bottom:0;
-                position:fixed;
-                /*margin:0px auto 0 auto;*/
-            }
 
 				#header h1 {
 					font-size: 1.75em;
@@ -2957,7 +2934,7 @@
 		/* Header */
 
 			#header {
-				padding: 2.25em 1.5em;
+				padding: 2.25em 1.5em 0 1.5em;
 			}
 
 				#header h1 {
@@ -3029,17 +3006,17 @@
 		/* Header */
 
 			#header {
-				padding: 4.5em 1.5em;
+				padding: 4.5em 1.5em 0 1.5em;
 			}
 
-			#header h1 br {
-				display: none;
-			}
-            #header .credit{
-                font-size: 0.5em;
-                width:100%;
-                bottom:0;
-                position:fixed;
-                /*margin:0px auto 0 auto;*/
-            }
+				#header h1 br {
+					display: none;
+				}
+
 	}
+
+.credit{
+    font-size: 0.5em;
+    position: relative;
+    margin: auto auto 0 auto;
+}
