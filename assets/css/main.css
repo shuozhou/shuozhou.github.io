@@ -1716,9 +1716,11 @@
 	}
 
 	header p {
+        font-size: 0.75em;
 		color: #b2b2b2;
 		position: relative;
-		margin: 0 0 1.5em 0;
+		margin: 1.5em 0 1.5em 8em;
+        line-height: 1.5em;
 	}
 
 	header h2 + p {
