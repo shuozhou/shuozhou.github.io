@@ -4,112 +4,84 @@
 @import 'libs/skel';
 
 /*
-	Spectral by HTML5 UP
+	Strata by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-/* Icon */
-
-	.icon {
-		&.major {
-			border: none;
-
-			&:before {
-				font-size: 3em;
-			}
-		}
-	}
-
-/* Form */
-
-	label {
-		color: _palette(accent7, fg-bold);
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea {
-		border: solid 1px _palette(accent7, border);
-	}
 
 /* Button */
 
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
-	button,
 	.button {
-		border: solid 2px _palette(accent7, border);
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
 
-		&.special {
-			border: 0 !important;
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		height: _size(element-height);
+		line-height: _size(element-height);
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		& + label {
+			&:before {
+				display: none;
+			}
 		}
 	}
 
-/* Page Wrapper + Menu */
+/* Image */
 
-	#menu {
-		display: none;
-	}
+	.image {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
 
-	body.is-menu-visible {
-		#menu {
-			display: block;
+		&:before, &:after {
+			display: none !important;
+		}
+
+		img {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
 		}
 	}
 
 /* Header */
 
 	#header {
-		nav {
-			> ul {
-				> li {
-					> a {
-						&.menuToggle {
-							&:after {
-								display: none;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-/* Banner + Wrapper (style4) */
-
-	#banner,
-	.wrapper.style4 {
+		background-image: url('../../images/bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
 		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
 
-		&:before {
-			display: none;
+		h1 {
+			color: _palette(accent2, fg-bold);
 		}
 	}
 
-/* Banner */
+/* Footer */
 
-	#banner {
-		.more {
-			height: 4em;
-
-			&:after {
-				display: none;
-			}
-		}
-	}
-
-/* Main */
-
-	#main {
-		> header {
-			-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
-
-			&:before {
-				display: none;
+	#footer {
+		.icons {
+			a {
+				color: _palette(accent2, fg-bold);
 			}
 		}
 	}
